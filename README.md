@@ -224,6 +224,7 @@ chmod 755 ~/bin/ncd
 ```
 ~/ncd-dotnet/
 ├── README.md                 ← 本ファイル（日本語メモ）
+├── README_qiita.md           ← Qiita 投稿用
 ├── publish/ncd               ← publish 成果物
 └── Ncd/
     ├── Ncd.csproj            ← プロジェクト定義
