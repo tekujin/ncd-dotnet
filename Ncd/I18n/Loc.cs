@@ -182,10 +182,11 @@ public static class Loc
         T("  F12       Quit", "  F12       종료", "  F12       終了");
 
     // ========== SMB（F5）ダイアログ ==========
-    public static string PromptSmbServer => T("SMB server (e.g. 192.168.1.10):", "SMB 서버 (예: 192.168.1.10):", "SMBサーバー (例: 192.168.1.10):");
+    // サンプル値はプレースホルダ（実パスワードをリポジトリに書かない）
+    public static string PromptSmbServer => T("SMB server (e.g. xxx.xxx.xxx.xxx):", "SMB 서버 (예: xxx.xxx.xxx.xxx):", "SMBサーバー (例: xxx.xxx.xxx.xxx):");
     public static string PromptShare => T("Share name:", "공유 이름:", "共有名:");
     public static string PromptUser => T("User:", "사용자:", "ユーザー:");
-    public static string PromptPassword => T("Password:", "비밀번호:", "パスワード:");
+    public static string PromptPassword => T("Password (e.g. xxxxxxx):", "비밀번호 (예: xxxxxxx):", "パスワード (例: xxxxxxx):");
     public static string PromptDomain => T("Domain (Enter if none):", "도메인 (없으면 Enter):", "ドメイン (なければEnter):");
     public static string SmbConnected(string path) => T($"SMB connected: {path}", $"SMB 연결: {path}", $"SMB接続: {path}");
     public static string SmbFail(string msg) => T("SMB failed: ", "SMB 실패: ", "SMB失敗: ") + msg;

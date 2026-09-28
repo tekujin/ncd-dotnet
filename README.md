@@ -354,7 +354,7 @@ chmod 755 ~/bin/ncd
 
 **役割:** Samba / Windows 共有への SMB2 クライアント実装（SMBLibrary 使用）。
 
-- 接続: サーバ・共有・ドメイン・ユーザ・パスワード
+- 接続: サーバ・共有・ドメイン・ユーザ・パスワード（例示は `xxx.xxx.xxx.xxx` / `xxxxxxx`）
 - 表示パス形式: `\\server\share\相対パス`
 - `CurrentRelative` … 共有内の相対パス（空＝共有ルート）
 - `TryParseUnc` … `\\server\share\...` および `smb://...` を解析
