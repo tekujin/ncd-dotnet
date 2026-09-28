@@ -1,0 +1,32 @@
+<!--
+  Ncd.csproj — プロジェクト定義ファイル
+  .NET SDK スタイルのプロジェクト。ビルド／単一ファイル公開の設定を持つ。
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- コンソール実行ファイルとして出力する -->
+    <OutputType>Exe</OutputType>
+    <!-- 対象フレームワークは .NET 8 -->
+    <TargetFramework>net8.0</TargetFramework>
+    <!-- global using を自動生成（System 等） -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- null 参照の静的解析を有効化 -->
+    <Nullable>enable</Nullable>
+    <!-- ルート名前空間 -->
+    <RootNamespace>Ncd</RootNamespace>
+    <!-- 出力バイナリ名を ncd にする -->
+    <AssemblyName>ncd</AssemblyName>
+    <!-- publish 時に単一ファイルへまとめる -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <!-- ランタイムを同梱した自己完結型配布 -->
+    <SelfContained>true</SelfContained>
+    <!-- トリミングはオフ（SMBLibrary 等の反射対策） -->
+    <PublishTrimmed>false</PublishTrimmed>
+    <!-- カルチャ依存 API を使えるよう Invariant モードは無効 -->
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Samba/Windows 共有アクセス用 SMB2 クライアントライブラリ -->
+    <PackageReference Include="SMBLibrary" Version="1.5.3.5" />
+  </ItemGroup>
+</Project>

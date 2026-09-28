@@ -1,0 +1,10 @@
+bin/
+obj/
+publish/
+.vs/
+*.user
+*.suo
+.DS_Store
+*.dll
+*.pdb
+*.exe
